@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -186,7 +188,7 @@
   <header>
     <h1 data-aos="fade-down">Hi, I'm Rakesh 👋</h1>
     <p data-aos="fade-up">Data Science Scholar | AI Enthusiast | LLM | Deep Learning</p>
-    <a href="./assets//Rakesh Halijol CV.docx" download class="resume-download"><i class="fas fa-file-download"></i> Download Resume</a>
+    <a href="./assets/Rakesh Halijol CV.docx" download class="resume-download"><i class="fas fa-file-download"></i> Download Resume</a>
     <span class="toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></span>
   </header>
 
@@ -207,21 +209,7 @@
   <section id="projects" class="container">
     <h2 data-aos="fade-right">Projects</h2>
     <div class="projects">
-      <a href="https://github.com/rakeshhalijol/content-based-movie-recommender-system" class="card" data-aos="flip-left" target="_blank">
-        <img src="./assets/Movie_recommender.jpg" />
-        <h3>Movie Recommender</h3>
-        <p>Built a content-based recommendation system using TF-IDF and cosine similarity.</p>
-      </a>
-      <a href="https://github.com/rakeshhalijol/Collaborative-Filtering-Based-Recommender-System" class="card" data-aos="flip-left" target="_blank">
-        <img src="./assets/Book.jpg" />
-        <h3>Book Recommender</h3>
-        <p>Built a Collabarative filtering based recommendation system using cosine similarity.</p>
-      </a>
-      <a href="https://github.com/rakeshhalijol/image-classifier" class="card" data-aos="flip-right" target="_blank">
-        <img src="https://via.placeholder.com/300x150?text=Classifier" />
-        <h3>Image Classifier</h3>
-        <p>Trained a CNN model using PyTorch and deployed using Streamlit.</p>
-      </a>
+      <!-- Cards will be dynamically loaded here -->
     </div>
   </section>
 
@@ -252,6 +240,8 @@
       document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
     }
   </script>
+  <script src="./loadProjects.js"></script>
 </body>
 
 </html>
+

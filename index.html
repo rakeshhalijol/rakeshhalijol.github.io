@@ -1,4 +1,4 @@
-
+<!-- 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -210,7 +210,7 @@
     <h2 data-aos="fade-right">Projects</h2>
     <div class="projects">
       <!-- Cards will be dynamically loaded here -->
-    </div>
+    <!-- </div>
   </section>
 
   <section id="contact" class="container">
@@ -243,5 +243,291 @@
   <script src="./loadProjects.js"></script>
 </body>
 
-</html>
+</html> -->
+ 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+  <style>
+    :root {
+      --bg: #f0f4ff;
+      --text: #2c3e50;
+      --primary: #6c63ff;
+      --header: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --bg: #1a1a2e;
+      --text: #eaeaea;
+      --primary: #9b59b6;
+      --header: #2d2d3a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(120deg, #6c63ff, #9d90ff);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .resume-download {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: white;
+      color: var(--primary);
+      padding: 0.6rem 1.4rem;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .resume-download:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--header);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .about img {
+      width: 220px;
+      border-radius: 50%;
+      border: 5px solid var(--primary);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .projects {
+      display: none;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .projects.active {
+      display: grid;
+    }
+
+    .card {
+      background: var(--header);
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    
+    .card img {
+  
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+    .card a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #5848c2;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .socials i {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 data-aos="fade-down">Hi, I'm Rakesh 👋</h1>
+    <p data-aos="fade-up">Data Science Scholar | AI Enthusiast | LLM | Deep Learning</p>
+    <a href="./assets/Rakesh Halijol CV.docx" download class="resume-download"><i class="fas fa-file-download"></i> Download Resume</a>
+    <span class="toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i></span>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="container about">
+    <img src="./assets/rakesh.jpeg" alt="My Photo" data-aos="zoom-in" />
+    <div>
+      <h2 class="animate__animated animate__fadeInRight">About Me</h2>
+      <p class="animate__animated animate__fadeInRight animate__delay-1s">I’m Rakesh, a passionate ML enthusiast currently working at SAP. I enjoy building intelligent applications and learning the latest in AI & deep learning.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 data-aos="fade-right">Projects</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showCategory('fundamentals')">Fundamentals</button>
+      <button class="tab-btn" onclick="showCategory('ml')">Machine Learning</button>
+      <button class="tab-btn" onclick="showCategory('genai')">Generative AI</button>
+    </div>
+    <div class="projects active" id="fundamentals-projects"></div>
+    <div class="projects" id="ml-projects"></div>
+    <div class="projects" id="genai-projects"></div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 data-aos="fade-left">Contact Me</h2>
+    <form class="contact-form" data-aos="zoom-in">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/rakeshhalijol" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/rakeshhalijol" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Rakesh | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme") || "light";
+      document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    }
+
+    function showCategory(category) {
+      document.querySelectorAll('.projects').forEach(p => p.classList.remove('active'));
+      document.querySelector(`#${category}-projects`).classList.add('active');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelector(`.tab-btn[onclick*="${category}"]`).classList.add('active');
+    }
+  </script>
+  <script src="loadProjects.js"></script>
+</body>
+
+</html>

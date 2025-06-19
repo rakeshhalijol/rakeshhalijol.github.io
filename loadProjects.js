@@ -1,23 +1,27 @@
-fetch("./projects.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const container = document.querySelector(".projects");
-    container.innerHTML = ""; // Clear existing content
+async function loadProjects() {
+  const res = await fetch("projects.json");
+  const projects = await res.json();
 
-    data.forEach((project) => {
-      const card = document.createElement("a");
-      card.className = "card";
-      card.href = project.repo;
-      card.target = "_blank";
-      card.setAttribute("data-aos", "flip-left");
+  const categories = {
+    Fundamentals: document.getElementById("fundamentals-projects"),
+    "Machine Learning": document.getElementById("ml-projects"),
+    "Generative AI": document.getElementById("genai-projects"),
+  };
 
-      card.innerHTML = `
-        <img src="${project.banner}" alt="${project.name} banner" />
-        <h3>${project.name}</h3>
-        <p>${project.description}</p>
-      `;
+  projects.forEach((project) => {
+    const card = document.createElement("a");
+    card.className = "card";
+    card.href = project.repo;
+    card.target = "_blank";
+    card.innerHTML = `
+      <img src="${project.banner}" alt="${project.name} Banner" />
+      <h3>${project.name}</h3>
+      <p>${project.description}</p>
+    `;
 
-      container.appendChild(card);
-    });
-  })
-  .catch((error) => console.error("Error loading project data:", error));
+    const section = categories[project.category];
+    if (section) section.appendChild(card);
+  });
+}
+
+loadProjects();

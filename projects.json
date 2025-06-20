@@ -49,5 +49,12 @@
     "banner": "./assets/qna.jpg",
     "repo": "https://github.com/rakeshhalijol/qna-chrome-extension-using-bert",
     "category": "Generative AI"
+  },
+  {
+    "name": "Langchain-Tutorials",
+    "description": "Langchain tutorials End to End for beginners.",
+    "banner": "./assets/langchain.jpg",
+    "repo": "https://github.com/rakeshhalijol/Langchain-Tutorials",
+    "category": "Fundamentals"
   }
 ]

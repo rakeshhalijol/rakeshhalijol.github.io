@@ -42,5 +42,12 @@
     "banner": "./assets/smartsuggester.png",
     "repo": "https://github.com/rakeshhalijol/SmartSuggester",
     "category": "Generative AI"
+  },
+  {
+    "name": "QnA on Web: Chrome extension",
+    "description": "QnA Chrome Extension Using BERT is a smart browser tool that lets users ask questions about products on e-commerce websites. It extracts the product description from the page, sends it to a BERT-based model, and provides instant, context-aware answers—no training required, just plug and play.",
+    "banner": "./assets/qna.jpg",
+    "repo": "https://github.com/rakeshhalijol/qna-chrome-extension-using-bert",
+    "category": "Generative AI"
   }
 ]

@@ -8,12 +8,27 @@
 
   },
   {
+    "name": "Email Spam Classification",
+    "description": "Classifing spam Emails with traditional ML models. (End-2-end)",
+    "banner": "./assets/email_spam.jpg",
+    "repo": "https://github.com/rakeshhalijol/Email-Spam-Classification-System.git",
+    "category": "Machine Learning"
+  },
+  {
     "name": "Book Recommender",
     "description": "Built a collaborative filtering based recommendation system using cosine similarity. (End-2-end)",
     "banner": "./assets/Book.jpg",
     "repo": "https://github.com/rakeshhalijol/Collaborative-Filtering-Based-Recommender-System",
     "category": "Machine Learning"
   },
+  {
+    "name": "Resume Classification",
+    "description": "Based on your resume content it will suggest suitable role for you (End-2-end)",
+    "banner": "./assets/resume-analysis.avif",
+    "repo": "https://github.com/rakeshhalijol/resume-analysis.git",
+    "category": "Machine Learning"
+  },
+  
   {
     "name": "Machine Learning Models From Scratch",
     "description": "Building machine learning model from scratch using numpy & pytorch",

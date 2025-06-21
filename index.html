@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakesh Halijol | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Halijol | Portfolio</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papm2kPjI62KcUjOtqmrHqzPzEz6CJKVfceo4u2AZ1CVrf7VFbOnFFK4N3Xe2MAMaBl6jJYzZ3s0NRFeK8HDlw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
+
 <body>
+  <!-- ===== Header Navigation ===== -->
+  <header>
+    <nav>
+      <a href="#" class="logo">Rakesh Halijol</a>
 
-    <header>
-        <nav>
-            <a href="#" class="logo">Rakesh Halijol</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="./assets/Rakesh Halijol CV.docx" class="btn-resume" download>Resume <i class="fas fa-download"></i></a>
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-            </div>
-        </nav>
-    </header>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="./assets/Rakesh Halijol CV.docx" class="btn-resume" download>
+          Resume <i class="fas fa-download"></i>
+        </a>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
 
-    <main>
-        <section id="about" class="about-section animate-on-scroll">
-            <div class="about-image">
-                <img src="./assets/rakesh.jpeg" alt="A picture of you">
-            </div>
-            <div class="about-content">
-                <h1>About Me</h1>
-                <p>
-                    Hi, I'm Rakesh Halijol, a passionate developer with a strong interest in machine learning, generative AI, and the fundamental principles of software engineering. I enjoy building innovative solutions that solve real-world problems. This portfolio showcases some of the projects I've worked on.
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/rakeshhalijol" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rakesh-halijol-7061ab21a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+    </nav>
+  </header>
 
-        <section id="projects" class="projects-section">
-            <h2>My Projects</h2>
-            
-            <div class="tab-nav" role="tablist">
-                <button id="genai-tab" role="tab" aria-selected="true" class="tab-button active">Generative AI</button>
-                <button id="ml-tab" role="tab" aria-selected="false" class="tab-button">Machine Learning</button>
-                <button id="fundamentals-tab" role="tab" aria-selected="false" class="tab-button">Fundamentals</button>
-            </div>
-            
-            <div id="project-container" class="project-container">
-                </div>
-        </section>
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about-section animate-on-scroll">
+      <div class="about-image">
+        <img src="./assets/rakesh.jpeg" alt="A picture of Rakesh Halijol" />
+      </div>
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm Rakesh Halijol, a passionate developer with a strong interest in machine learning, generative AI, and the fundamental principles of software engineering. I enjoy building innovative solutions that solve real-world problems. This portfolio showcases some of the projects I've worked on.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/rakeshhalijol" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rakesh-halijol-7061ab21a/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact" class="contact-section animate-on-scroll">
-            <h2>Get in Touch</h2>
-            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!</p>
-            <a href="mailto:rakeshkhalijol05@gmail.com" class="cta-button">Say Hello</a>
-        </section>
-    </main>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="tab-nav" role="tablist">
+        <button id="genai-tab" role="tab" aria-selected="true" class="tab-button active">Generative AI</button>
+        <button id="ml-tab" role="tab" aria-selected="false" class="tab-button">Machine Learning</button>
+        <button id="fundamentals-tab" role="tab" aria-selected="false" class="tab-button">Fundamentals</button>
+      </div>
+      <div id="project-container" class="project-container"></div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Rakesh Halijol. All Rights Reserved.</p>
-    </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section animate-on-scroll">
+      <h2>Get in Touch</h2>
+      <p>
+        I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
+      </p>
+      <a href="mailto:rakeshkhalijol05@gmail.com" class="cta-button">Say Hello</a>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Rakesh Halijol. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script src="script.js"></script>
 </body>
 </html>

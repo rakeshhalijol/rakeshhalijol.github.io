@@ -57,4 +57,12 @@
     "repo": "https://github.com/rakeshhalijol/Langchain-Tutorials",
     "category": "Fundamentals"
   }
+  ,
+  {
+    "name": "Langgraph-Tutorials",
+    "description": "Langgraph tutorials End to End for beginners.",
+    "banner": "./assets/langgraph.png",
+    "repo": "https://github.com/rakeshhalijol/langgraph-tutorials.git",
+    "category": "Fundamentals"
+  }
 ]
